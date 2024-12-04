@@ -11,6 +11,7 @@ h1 {
 
 form {
   display: flex;
+  flex-direction: row;
   margin-bottom: 20px;
 }
 
@@ -54,4 +55,74 @@ li span {
 
 li button {
   margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  li span {
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+  li button {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 10px;
+  }
+
+  form {
+    gap: 8px;
+  }
+
+  input[type="text"] {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+
+  li {
+    gap: 5px;
+  }
+
+  li span {
+    font-size: 14px;
+  }
+
+  li button {
+    font-size: 12px;
+  }
 }
