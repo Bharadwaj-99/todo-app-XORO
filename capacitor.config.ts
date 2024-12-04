@@ -5,7 +5,7 @@ const config: CapacitorConfig = {
   appName: 'todo-app',
   webDir: 'build',
   server:{
-    url: 'http://192.168.29.157:3000 ',
+    url: 'https://todo-app-xoro-a7k7.vercel.app/ ',
     cleartext: true
   }
 };
